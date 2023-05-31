@@ -46,7 +46,7 @@ Asimismo, la consola web proporciona una vista gráfica de todas las revisiones.
 A continuación, nos iremos a la vista Topología y haremos clic en el objeto KSVC que corresponde a su aplicación. En la barra lateral que se abre, haremos clic en Recursos.
 
 <div align="center">
-<img src="capturas/revisions.png" alt="revisions" width="600px" height="auto"/>
+<img src="capturas/revisions.PNG" alt="revisions" width="600px" height="auto"/>
 </div>
 
 **Enrutamiento en OpenShift Serverless**
