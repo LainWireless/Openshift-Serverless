@@ -30,7 +30,7 @@ El escenario de Implementación Canary es un enfoque más cauteloso que a menudo
 
 Si la nueva versión funciona según lo esperado, entonces se puede aumentar gradualmente el porcentaje de solicitudes que se dirigen a la nueva versión. De lo contrario, si la nueva versión resulta problemática, se puede deshacer redirigiendo a todos los usuarios a la versión anterior.
 
-![Canary](capturas/canary.PNG)
+![Canary](capturas/canary.png)
 
 Los controles de enrutamiento de tráfico Serverless de OpenShift proporcionan la flexibilidad para dirigir las solicitudes a múltiples revisiones. Esta flexibilidad permite el uso de implementaciones de canarios o cualquier variación personalizada necesaria para apoyar el negocio.
 
