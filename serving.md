@@ -155,19 +155,19 @@ oc delete ksvc service-deployment-example.yaml
 
 Desde la perspectiva del desarrollador, haremos clic en +Add. Si deseamos implementar una aplicación desde una imagen de contenedor, entonces hacemos clic en Imágenes de contenedor. Si deseamos implementar una aplicación desde un repositorio Git, entonces hacemos clic en Importar desde Git.
 
-![web1](capturas/web1.png)
+![web1](capturas/web1.PNG)
 
 En este caso vamos a ver como se haría desde una imagen de contenedor. Debemos completar los campos requeridos en el formulario.
 
-![web2](capturas/web2.png)
+![web2](capturas/web2.PNG)
 
 A continuación, en el panel de Recursos, seleccionamos la opción de Implementación Serverless. Al seleccionar esta opción, se implementa la aplicación como un servicio Knative.
 
-![web3](capturas/web3.png)
+![web3](capturas/web3.PNG)
 
 Para terminar, hacemos clic en Create y ya tendremos nuestra aplicación desplegada.
 
-![web4](capturas/web4.png)
+![web4](capturas/web4.PNG)
 
 **Creando un Servicio Knative utilizando la CLI kn**
 
