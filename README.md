@@ -1,18 +1,3 @@
-<style>
-  body {
-    font-family: 'Calibri', sans-serif;
-    font-size: 12pt;
-    line-height: 1.5;
-  }
-</style>
-
-<style>
-  code {
-    font-size: 12pt;
-    font-family: 'Courier New', monospace;
-  }
-</style>
-
 # **Iniciación a OpenShift Serverless y Knative Serving**
 
 ![Portada](Portada.jpg)
