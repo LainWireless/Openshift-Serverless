@@ -110,7 +110,7 @@ Este límite se aplica estrictamente. Es decir, si el número de solicitudes con
 
 Podremos especificar un límite duro por revisión modificando la especificación containerConcurrency del servicio Knative, o utilizando la opción "--concurrency-limit" del comando kn service.
 
-![scalin3](capturas/scalin3.png)
+![scalin3](capturas/scalin3.PNG)
 
 El siguiente ejemplo configura un límite duro de 12 solicitudes concurrentes en el servicio Knative llamado echo:
 ```bash
@@ -121,7 +121,7 @@ kn service update echo --concurrency-limit 12
 
 Un límite suave es un límite de solicitudes objetivo. Por ejemplo, si hay una ráfaga repentina de tráfico, el objetivo de límite suave puede ser superado. Podemos definir el límite suave global con la clave container-concurrency-target-default, o por revisión con la clave de anotación autoscaling.knative.dev/target. El valor predeterminado es 100.
 
-![scalin4](capturas/scalin4.png)
+![scalin4](capturas/scalin4.PNG)
 
 Alternativamente, podríamos utilizar la opción "--scale-target" disponible en el comando kn service para definir cuándo escalar en función del número concurrente de solicitudes entrantes.
 
