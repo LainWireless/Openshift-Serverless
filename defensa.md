@@ -6,6 +6,9 @@ oc new-project temperaturas
 ```
 
 Contenido del archivo YAML front-end que define el servicio que proporciona nuestra aplicación, aquí es donde implementaremos la aplicación Serverless con Knative Serving:
+```bash
+nano temperaturas-frontend-service.yaml
+```
 ```yaml
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -26,6 +29,9 @@ spec:
 ```
 
 Contenido del archivo YAML back-end que en este caso es un DeploymentConfig:
+```bash
+nano temperaturas-backend-deploymentconfig.yaml
+```
 ```yaml
 apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
@@ -54,6 +60,9 @@ spec:
 ```
 
 Necesitará un servicio para exponer el puerto 5000 del contenedor:
+```bash
+nano temperaturas-backend-service.yaml
+```
 ```yaml
 apiVersion: v1
 kind: Service
@@ -73,7 +82,7 @@ spec:
     tier: backend
 ```
 
-Aplicamos los archivos YAML.
+Aplicamos los archivos YAML:
 ```bash
 oc apply -f temperaturas-backend-deploymentconfig.yaml
 oc apply -f temperaturas-backend-service.yaml
@@ -92,7 +101,7 @@ oc get pods,route,deployment,service
 
 # Modificación de la app
 
-Hemos cambiado el tiempo de vida de los pods, su escala máxima, su escala mínima y su concurrencia. También hemos creado una nueva revisión, una etiqueta para la misma y hemos cambiado el tráfico entre las revisiones de la app.
+Hemos cambiado el tiempo de vida de los pods, su escala máxima, su escala mínima y su concurrencia. También hemos creado una nueva revisión, una etiqueta para la misma y hemos cambiado el tráfico entre las revisiones de la app:
 ```bash
 kn service update temperaturas-frontend \
 --scale-window 10s \
@@ -105,7 +114,7 @@ kn service update temperaturas-frontend \
 --tag temperaturas-frontend-v2='final-version'
 ```
 
-Vamos a volver a cambiar el tráfico.
+Vamos a volver a cambiar el tráfico:
 
 ```bash
  kn service update temperaturas-frontend \
@@ -113,7 +122,7 @@ Vamos a volver a cambiar el tráfico.
 --traffic temperaturas-frontend-v2=50
 ```
 
-Vamos a inspeccionar la app con los siguientes comando.
+Vamos a inspeccionar la app con los siguientes comando:
 
 ```bash
 kn revision list
