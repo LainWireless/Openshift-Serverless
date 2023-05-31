@@ -77,7 +77,7 @@ La instalación del Operador OpenShift Serverless nos permite instalar y usar Kn
 1. En la consola web de la plataforma de contenedores OpenShift, vamos a la página Operadores → OperatorHub.
 
 <div align="center">
-<img src="serverless1.png" alt="serverless1" height="300px" width="350px">
+<img src="capturas/serverless1.png" alt="serverless1" height="300px" width="350px">
 </div>
 
 2. Nos desplazamos, o escribimos la palabra clave "Serverless" en el cuadro Filtrar por palabra clave para encontrar el Operador OpenShift Serverless.
